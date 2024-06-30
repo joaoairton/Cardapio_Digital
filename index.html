@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css"/>
+
+    <title>Sol do Sertão Hamburgueria</title>
+</head>
+<body>
+    
+<!--HEADER-->
+<header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+        src="./assets/logo.png"
+        alt="Logo Sol do Sertão"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
+            Sol do Sertão Hamburgueria
+        </h1>
+
+        <span class="text-white font-medium">Rua 7 de Setembro, 86, Itajaí - SC</span>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Terça à Domingo - 18:00 às 23:00</span>
+        </div>
+    </div>
+</header>
+<!--FIM DO HEADER-->
+
+<h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-9">
+    Conheça o nosso menu
+</h2>
+
+<!-- INÍCIO DO MENU -->
+<div id="menu">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+    <!--INICIO PRODUTO-->
+    <div class="flex gap-2">
+        <img src="./assets/hamb-1.png"
+        alt="Smash Burguer"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+        
+        <div>
+            <p class="font-bold">Smash Burguer</p>
+            <p class="text-sm">Um irresistível hambúrguer de 150g de carne bovina selecionada. Pão tostado e macio, acompanhado de alface crocante, tomate fresco, cebola roxa e queijo cheddar derretido.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 16,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="Smash Burguer"
+                data-price="16,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+
+    <!--INICIO PRODUTO-->
+    <div class="flex gap-2">
+        <img src="./assets/hamb-2.png"
+        alt="X-Salada"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+        
+        <div>
+            <p class="font-bold">X-Salada</p>
+            <p class="text-sm">Um hambúrguer suculento com queijo derretido, alface fresca e tomate, tudo em um pão macio. Perfeito para qualquer hora!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 18,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="X-Salada"
+                data-price="18,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    <!--INICIO PRODUTO-->
+    <div class="flex gap-2">
+        <img src="./assets/hamb-3.png"
+        alt="X-Frango"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+        
+        <div>
+            <p class="font-bold">X-Frango</p>
+            <p class="text-sm">Um irresistível hambúrguer com pão tostado e macio, acompanhado de alface crocante, tomate fresco, cebola roxa, frango e queijo cheddar derretido.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 21,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="X-Frango"
+                data-price="21,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    <!--INICIO PRODUTO-->
+    <div class="flex gap-2">
+        <img src="./assets/hamb-4.png"
+        alt="X-Tapioca"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+        
+        <div>
+            <p class="font-bold">X-Tapioca</p>
+            <p class="text-sm">Um irresistível hambúrguer de 150g de carne bovina selecionada. Pão tostado e macio, acompanhado de alface crocante, tomate fresco, cebola roxa e queijo cheddar derretido.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 28,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="X-Tapioca"
+                data-price="28,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    </main>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+    </div>
+
+    <!-- GRID BEBIDAS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        
+    <!-- INICIO PRODUTO -->
+        <div class="flex gap-2 w-full">
+        <img src="./assets/refri-1.png"
+        alt="Coca-Cola 350 ml"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+    
+        <div class="w-full">
+            <p class="font-bold">Coca-Cola 350 ml</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 6,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="Coca-Cola 350 ml"
+                data-price="6,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+        </div>
+    <!--FIM PRODUTO-->
+
+    <!-- INICIO PRODUTO -->
+    <div class="flex gap-2 w-full">
+        <img src="./assets/refri-2.png"
+        alt="Guaraná Antártica 350 ml"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+        
+        <div class="w-full">
+            <p class="font-bold">Guaraná Antártica 350 ml</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 6,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="Guaraná Antártica 350 ml"
+                data-price="6,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    <!-- INICIO PRODUTO -->
+    <div class="flex gap-2 w-full">
+        <img src="./assets/refri-3.png"
+        alt="Cajuína São Geraldo 350 ml"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+    
+        <div class="w-full">
+            <p class="font-bold">Cajuína São Geraldo 350 ml</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 8,00</p>
+                <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+                data-name="Cajuína São Geraldo 350 ml"
+                data-price="8,00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    <!-- INICIO PRODUTO -->
+    <div class="flex gap-2 w-full">
+        <img src="./assets/refri-4.png"
+        alt="Fanta Laranja 350 ml"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+
+    <div class="w-full">
+        <p class="font-bold">Fanta Laranja 350 ml</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6,00</p>
+            <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+            data-name="Fanta Laranja 350 ml"
+            data-price="6,00">
+
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    <!-- INICIO PRODUTO -->
+    <div class="flex gap-2 w-full">
+        <img src="./assets/refri-5.png"
+        alt="Guaraná Jesus 350 ml"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+
+    <div class="w-full">
+        <p class="font-bold">Guaraná Jesus 350 ml</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 8,00</p>
+            <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+            data-name="Guaraná Jesus 350 ml"
+            data-price="8,00">
+
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    <!-- INICIO PRODUTO -->
+    <div class="flex gap-2 w-full">
+        <img src="./assets/refri-6.png"
+        alt="Pepsi 350 ml"
+        class="w-28 h-28 rounded-md hover:scale-110 duration-300"
+        />
+
+    <div class="w-full">
+        <p class="font-bold">Pepsi 350 ml</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6,00</p>
+            <button class="bg-gray-900 px-5 rounded add-too-cart-btn"
+            data-name="Pepsi 350 ml"
+            data-price="6,00">
+
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+
+    </div>
+    <!--FIM PRODUTO-->
+
+    </div>
+    <!-- FIM GRID BEBIDAS -->
+
+</div>
+<!--FIM DO MENU-->
+
+
+<!-- MODAL -->
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold">Total: <span id="cart-total">0,00</span></p>
+
+        <div class="mt-4">
+            <label for="cep" class="font-bold">Digite seu CEP:</label>
+            <input type="text" placeholder="Digite seu CEP" id="cep" class="w-1/2 md:w-1/4 border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="cep-warn">Digite um CEP válido</p>
+        </div>
+
+        <div class="mt-4">
+            <p class="font-bold">Endereço:</p>
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full md:w-1/2 px-2">
+                    <input type="text" placeholder="Rua" id="street" class="w-full border-2 p-1 rounded my-1" disabled>
+                </div>
+                <div class="w-full md:w-1/2 px-2">
+                    <input type="text" placeholder="Bairro" id="neighborhood" class="w-full border-2 p-1 rounded my-1" disabled>
+                </div>
+                <div class="w-full md:w-1/3 px-2">
+                    <input type="text" placeholder="Número" id="number" class="w-full border-2 p-1 rounded my-1">
+                </div>
+                <div class="w-full md:w-1/3 px-2">
+                    <input type="text" placeholder="Complemento" id="complement" class="w-full border-2 p-1 rounded my-1">
+                </div>
+                <div class="w-full md:w-1/3 px-2">
+                    <input type="text" placeholder="Cidade" id="city" class="w-full border-2 p-1 rounded my-1" disabled>
+                </div>
+            </div>
+            <p class="text-red-500 hidden" id="address-warn">Digite o número do endereço</p>
+        </div>
+
+        <div class="flex items-center justify-end mt-5">
+            <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded mr-2">Fechar</button>
+            <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar pedido</button>
+        </div>
+    </div>
+</div>
+
+<!--FIM MODAL-->
+
+<!-- BOTÃO FOOTER -->
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+    >
+            (<span id="cart-count">0</span>)
+            Ver carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+<!--FIM BOTÃO FOOTER-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
